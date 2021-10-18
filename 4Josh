@@ -7,7 +7,7 @@ So, I want to essentially put two (or more) of these 'mondrian generators' next 
 As you can see I have figured out (however inelegantly) how to create a canvas that is landscape oriented. I've constrained the current generator to the left half. My plan was to have the .js re-run - with different parameters - again on the right half, but alas I'm just stumbling around since I don't officially know how to do any of this. 
 
 Right now there are two main places where you can change what kind of design is generated (aside from the obvious like colors, line width, etc):
-  - Line 10 of the .js: the 'step' size - the number of divisions will be some multiple of the denominator. It gets more interesting if the step size is something a little more off-kilter like 'step = (size / (3 + 60))' for example. 
-  - line 27: the Math.random - seems to affect how many times each square is split. 
+  - Line 10 of the .js: the 'step' size - the number of divisions will be some multiple of the denominator. It gets more interesting if the step size is something a little more off-kilter like step = [(size / 3) + 60], for example. 
+  - line 27: the Math.random affects how many times squares are split (I think). 
   
   That's all for now. 
