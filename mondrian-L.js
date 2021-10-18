@@ -30,9 +30,7 @@ let colors = ['red', 'yellow', 'blue']
       }
     }
 
-    console.log(Math.random)
-
-    if (y && y > square.y && y < square.y + square.height) {
+      if (y && y > square.y && y < square.y + square.height) {
       if(Math.random() > 0.5) {
         squares.splice(i, 1);
         splitOnY(square, y); 
