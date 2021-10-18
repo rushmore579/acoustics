@@ -24,7 +24,7 @@ let colors = ['red', 'yellow', 'blue']
   for (let i = squares.length - 1; i >= 0; i--) {
     const square = squares[i];
     if (x && x > square.x && x < square.x + square.width) {
-      if(Math.random() > .8) {
+      if(Math.random() > .5) {
         squares.splice(i, 1);
         splitOnX(square, x); 
       }
