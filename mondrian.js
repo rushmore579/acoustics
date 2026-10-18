@@ -2,6 +2,8 @@
 // The canvas is split into a left and a right group of panels. Each group is
 // carved into rectangles on its own grid, so the left side can stay sparse
 // (1-2 big panels) while the right side gets busier (4-5 smaller ones).
+//
+// Based on the original Mondrian generator code provided by Josh Rogers.
 
 let canvas = document.querySelector('canvas');
 let context = canvas.getContext('2d');
