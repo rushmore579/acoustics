@@ -4,27 +4,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Acoustic Panel Generator</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
+<header>
+    <h1>Acoustic Panel Generator</h1>
+    <p>Mondrian-style layouts for sound-absorbing panel arrays.</p>
+</header>
+
 <div class="frame">
-
     <canvas></canvas>
-    
-        <!-- Left Half -->
-            <script src="mondrian-L.js"></script>
-               
-        <!-- Right Half -->
-            <script src="mondrian-R.js"></script>
-        
- </div> 
+</div>
 
-<div class="callback"></div>
+<div class="controls">
+    <div class="control-rows">
+        <span class="row-label" id="panel-count-label">Panel Count</span>
+        <div class="row-content panel-count" role="group" aria-labelledby="panel-count-label">
+            <label class="wedge-slider">
+                <span class="wedge">
+                    <span class="wedge-fill"></span>
+                    <svg class="wedge-outline" viewBox="0 0 100 20" preserveAspectRatio="none" aria-hidden="true">
+                        <polygon points="0,20 100,0 100,20" vector-effect="non-scaling-stroke"></polygon>
+                    </svg>
+                    <input id="left-panels" type="range" min="1" max="9" value="2" aria-label="Left panel count">
+                </span>
+                <span class="wedge-label">L</span>
+            </label>
 
+            <label class="wedge-slider">
+                <span class="wedge">
+                    <span class="wedge-fill"></span>
+                    <svg class="wedge-outline" viewBox="0 0 100 20" preserveAspectRatio="none" aria-hidden="true">
+                        <polygon points="0,20 100,0 100,20" vector-effect="non-scaling-stroke"></polygon>
+                    </svg>
+                    <input id="right-panels" type="range" min="1" max="9" value="5" aria-label="Right panel count">
+                </span>
+                <span class="wedge-label">R</span>
+            </label>
+        </div>
+
+        <span class="row-label" id="regenerate-label">Regenerate</span>
+        <div class="row-content regenerate" role="group" aria-labelledby="regenerate-label">
+            <button id="regenerate-left" type="button">Left</button>
+            <button id="regenerate-both" type="button">Both</button>
+            <button id="regenerate-right" type="button">Right</button>
+        </div>
+    </div>
+
+    <label class="palette">
+        Palette
+        <select id="palette">
+            <option value="felt">Acoustic felt</option>
+            <option value="classic">Classic Mondrian</option>
+            <option value="original">Original</option>
+        </select>
+    </label>
+</div>
+
+<script src="mondrian.js"></script>
 
 </body>
 </html>
-
