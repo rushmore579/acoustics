@@ -2,7 +2,7 @@
 
 This is similar to a number of sites and projects that are some version of a "Mondrian Generator," i.e., designed to generate a set of rectangles, squares and colors that resemble art by Piet Mondrian.
 
-The original Mondrian generator code was provided by Josh Rogers. It's the best Mondrian Generator I've seen.
+The original Mondrian generator code was found online (creator unknown), and updated by Josh Rogers. UI tweaked with Claude. 
 
 Utimately, I'd like to use something like this to create designs for:
 - groups of sound absorbing acoustic panels
